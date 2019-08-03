@@ -26,10 +26,10 @@ element = browser.find_element_by_css_selector('#file')
 current_dir = os.path.abspath(os.path.dirname(__file__))    # получаем путь к директории текущего исполняемого файла 
 file_path = os.path.join(current_dir, 'file.txt')           # добавляем к этому пути имя файла 
 element.send_keys(file_path)
-
+element.click()
 # Нажать на кнопку "Отправить".
-button = browser.find_element_by_css_selector("button.btn")
-button.click()
+# button = browser.find_element_by_css_selector("button.btn")
+# button.click()
 
 # current_dir = os.path.abspath(os.path.dirname(__file__))    # получаем путь к директории текущего исполняемого файла 
 # file_path = os.path.join(current_dir, 'file.txt')           # добавляем к этому пути имя файла 
